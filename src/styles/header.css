@@ -1,0 +1,30 @@
+.header{
+    height: 6rem;
+    background-color: #293462;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo_header h1{
+    color: white;
+}
+
+.items{
+    display: flex;
+}
+
+.items li{
+    list-style: none;
+}
+
+.items li a{
+    color: white;
+    font-size: 2rem;
+}

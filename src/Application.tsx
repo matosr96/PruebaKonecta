@@ -1,20 +1,15 @@
-import { Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LoadingBox from "./components/Layout/LoadingBox";
-import NotFound from "./screens/NotFount";
+import Inventory from "./screens/Inventory";
+import "../src/styles/globals.css"
 
 const Application = () => {
-
   return (
-    <Suspense fallback={<LoadingBox />}>
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LoadingBox />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Inventory />} />
       </Routes>
-      </BrowserRouter>
-    </Suspense>
-  )
-}
+    </BrowserRouter>
+  );
+};
 
 export default Application;
